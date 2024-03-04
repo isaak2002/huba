@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 160px;
+}
+
+header #logo{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo img{
+    height: 40px;
+}
+
+header #nav{
+    width: auto;
+    height: 50%;
+    padding: 0 40px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+#nav #search{
+    border: 1px solid #000;
+    padding: 8px 0;
+    width: max-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#search i{
+    font-size: 20px;
+    font-weight: 200;
+}
+#search input{
+    font-size: 16px;
+    width: 60%;
+    margin-left: 8px;
+    font-weight: 200;
+    outline: none;
+    border: none;
+}
+#search input::placeholder{
+    font-weight: 200;
+}
+
+#nav #menu{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    letter-spacing: 2px;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #000;
+}
+
+#nav #cta{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+#cta #login{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+#cta #login i{
+    font-size: 22px;
+    padding: 3px 4px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+}
+#cta a{
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+}
+#cta i{
+    font-size: 24px;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    margin-top: 16px;
+}
+
+main #container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+main #container video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#container #content{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+#content h1{
+    font-size: 64px;
+    text-align: center;
+    color: #fff;
+}
+
+#content #btn{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+}
+#content #btn button{
+    height: 40px;
+    width: 132px;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#btn1{
+    color: #000;
+    background-color: #fff;
+    text-transform: uppercase;
+}
+
+#btn1:hover{
+    color: #fff;
+    background-color: #000;
+    transition: all 0.4s;
+    animation: ease-in-out;
+}
+
+#btn2{
+    color: #fff;
+    background-color: #000;
+    text-transform: capitalize;
+}
+#btn2:hover{
+    color: #000;
+    background-color: #fff;
+    transition: all 0.4s;
+    animation: ease-in-out;
+}
+
+main #banner{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner img{
+    height: 80%;
+    width: 90%;
+    object-fit: cover;
+}
+
+main #content1{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content1 img{
+    height: 100px;
+}
+
+#content1 h1{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 16px 0;
+}
+
+#content1 h3{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+main #platform{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+}
+
+#platform #left{
+    margin-left: 72px;
+    height: 100%;
+    width: 35%;
+}
+
+#left #title{
+    height: 15%;
+    padding-left: 120px;
+    display: flex;
+    font-size: 8.5px;
+    text-transform: uppercase;
+    gap: 8px;
+    align-items: center;
+}
+
+#title h1{
+    font-weight: 800;
+}
+
+#left #explore{
+    height: 55%;
+    background-color: #000;
+    color: #fff;
+    padding-left: 64px;
+    padding-top: 120px;
+}
+#explore h1{
+    font-size: 50px;
+    width: 64%;
+    font-weight: 800;
+}
+#explore #btn{
+    width: 220px;
+    height: 48px;
+    margin-top: 24px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#explore #btn button{
+    width: 164px;
+    height: 48px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #555555;
+    border-color: #fff;    
+}
+#explore #btn button:hover{
+    background-color: #000;
+    border: none;
+    transition: 0.8s;
+}
+#explore #btn i{
+    font-size: 28px;
+    color: #000;
+    background-color: #fff;
+}
+
+#platform #right{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    margin-right: 72px;
+
+}
+
+#right #img-group{
+    height: 100vh;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#img-group img{
+    width: 400px;
+}
+
+#right #img{
+    height: 100vh;
+}
+#img img{
+    height: 100vh;
+    object-fit: cover;
+}
+
+#right #img-2{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(20%, -50%);
+}
+#img-2 img{
+    height: 480px;
+}
+
+main #content2{
+    height: 110vh;
+    width: 100%;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#content2 img{
+    width: 40%;
+}
+#content2 h1{
+    margin-top: -144px;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #FFD14F;
+    width: 70%;
+    line-height: 72px;
+}
+
+footer{
+    width: 100%;
+    height: 100vh;
+    background-color: #555555;
+}
